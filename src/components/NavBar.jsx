@@ -14,8 +14,13 @@ export const NavBar = () => {
         <div className="m-auto w-fit">
           <ul className="flex items-center gap-10">
             <li>
-              {/* <Link to={"/products"}>Nos produits</Link> */}
               <HeaderItem href="/products">Nos produits</HeaderItem>
+            </li>
+            <li>
+              <HeaderItem href="/counter-redux">Compteur redux</HeaderItem>
+            </li>
+            <li>
+              <HeaderItem href="/mon-panier">Mon panier</HeaderItem>
             </li>
           </ul>
         </div>
