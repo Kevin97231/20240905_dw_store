@@ -6,6 +6,7 @@
 }
 .navbar {
   position: fixed;
+  z-index: 999;
 }
 
 .root-container {

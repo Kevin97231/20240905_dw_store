@@ -3,6 +3,7 @@ import "./App.css";
 import { Footer } from "./components/footer";
 import { NavBar } from "./components/NavBar";
 import { NotFound } from "./view/NotFound";
+import { Products } from "./view/Products";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,7 +17,7 @@ function App() {
         },
         {
           path: "/products",
-          element: <>products</>,
+          element: <Products />,
         },
         {
           path: "*",
