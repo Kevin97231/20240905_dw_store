@@ -13,6 +13,14 @@ export const cartSlice = createSlice({
         state.value.push(productToAdd);
       }
     },
+    deleteProduct: (state, action) => {
+      const productIdToDelete = action.payload;
+
+      // Filtrer pour garder uniquement les produits qui n'ont pas l'ID à supprimer
+      state.value = state.value.filter(
+        (product) => product.id !== productIdToDelete
+      );
+    },
   },
 });
 
