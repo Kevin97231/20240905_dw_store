@@ -6,8 +6,7 @@ import { Pagination } from "../components/Pagination";
 import { Select } from "../components/Select";
 
 export const Products = () => {
-  const { loading, getPaginate, page, perPage, setPage, setPerPage } =
-    useAxios();
+  const { getPaginate, page, perPage, setPage, setPerPage } = useAxios();
 
   const [products, setProducts] = useState();
   const [responseObject, setResponseObject] = useState({ pages: 0, items: 0 });
@@ -45,7 +44,8 @@ export const Products = () => {
   return (
     <div className="w-full">
       <Titre>Mes produits</Titre>
-      {loading ? <p>chargement</p> : <ProductList products={products} />}
+      <ProductList products={products} />
+
       <div className="m-auto my-5 w-fit">
         <Pagination
           handleClick={clickOnPaginationButton}

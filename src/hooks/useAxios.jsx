@@ -8,7 +8,7 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(
-  (config) => new Promise((resolve) => setTimeout(() => resolve(config), 2000))
+  (config) => new Promise((resolve) => setTimeout(() => resolve(config), 1200))
 );
 
 export const useAxios = () => {
