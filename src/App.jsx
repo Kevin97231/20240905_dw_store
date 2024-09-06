@@ -7,6 +7,7 @@ import { Products } from "./view/Products";
 import { CounterRedux } from "./view/CounterRedux";
 import { Cart } from "./view/Cart";
 import { HomePage } from "./view/HomePage";
+import { ProductDetail } from "./view/ProductDetail";
 
 function App() {
   const router = createBrowserRouter([
@@ -21,6 +22,10 @@ function App() {
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/products/:id",
+          element: <ProductDetail />,
         },
         {
           path: "/counter-redux",

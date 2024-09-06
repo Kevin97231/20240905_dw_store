@@ -7,11 +7,8 @@ export const ProductList = ({
   title,
   onClickFunction,
   displayButton = false,
+  buttonType = "primary",
 }) => {
-  // const handleClick = (product) => {
-  //   onClickFunction(product);
-  // };
-
   return (
     <>
       <div className="grid w-full grid-cols-4 gap-4">
@@ -23,6 +20,7 @@ export const ProductList = ({
                 onClickFunction={onClickFunction}
                 title={title}
                 displayButton={displayButton}
+                buttonType={buttonType}
               ></ProductCard>
             </Fragment>
           ))}

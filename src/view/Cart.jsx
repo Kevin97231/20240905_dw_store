@@ -22,6 +22,7 @@ export const Cart = () => {
         title={"supprimer du panier"}
         onClickFunction={handleDeleteProduct}
         displayButton="true"
+        buttonType="error"
       />
     </div>
   );
