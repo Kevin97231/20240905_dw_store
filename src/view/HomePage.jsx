@@ -10,7 +10,7 @@ export const HomePage = () => {
   // notre json server, enregistre les données dans le store redux.
   // Sur l'affichage, on utilise un 'selector' pour s'abonner' à 'products'
   // On aura le meme effet qu'avec un useState ==> quand 'product' changera,
-  // le rendu sera reclaculé
+  // le rendu sera recalculé
 
   const { getPaginate, perPage, setPerPage } = useAxios();
 

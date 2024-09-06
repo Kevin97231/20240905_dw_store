@@ -18,12 +18,12 @@ export const ProductList = ({
         {products &&
           products.map((product) => (
             <Fragment key={product.id}>
-              {displayButton && (
-                <button onClick={() => onClickFunction(product)}>
-                  {title}
-                </button>
-              )}
-              <ProductCard key={product.id} product={product}></ProductCard>
+              <ProductCard
+                product={product}
+                onClickFunction={onClickFunction}
+                title={title}
+                displayButton={displayButton}
+              ></ProductCard>
             </Fragment>
           ))}
       </div>
