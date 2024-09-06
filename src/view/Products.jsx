@@ -43,25 +43,24 @@ export const Products = () => {
   };
 
   return (
-    <>
-      <div>
-        <Titre>Mes produits</Titre>
-
-        {loading ? <p>CHARGEMENT</p> : <ProductList products={products} />}
-        <div className="flex m-auto my-5 w-fit">
-          <Pagination
-            handleClick={clickOnPaginationButton}
-            nbrButton={responseObject.pages}
-          />
-          <Select
-            options={tableSelect}
-            value={perPage}
-            onChangeFunction={selectOnChange}
-          >
-            Nbr de produits à afficher:
-          </Select>
-        </div>
+    <div className="w-full">
+      <Titre>Mes produits</Titre>
+      {loading ? <p>chargement</p> : <ProductList products={products} />}
+      <div className="m-auto my-5 w-fit">
+        <Pagination
+          handleClick={clickOnPaginationButton}
+          nbrButton={responseObject.pages}
+        />
       </div>
-    </>
+      <div className="m-auto my-5 w-fit">
+        <Select
+          options={tableSelect}
+          value={perPage}
+          onChangeFunction={selectOnChange}
+        >
+          Nb de produits à afficher
+        </Select>
+      </div>
+    </div>
   );
 };

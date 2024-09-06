@@ -6,6 +6,7 @@ import { NotFound } from "./view/NotFound";
 import { Products } from "./view/Products";
 import { CounterRedux } from "./view/CounterRedux";
 import { Cart } from "./view/Cart";
+import { HomePage } from "./view/HomePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,7 +16,7 @@ function App() {
       children: [
         {
           path: "",
-          element: <>Homepage</>,
+          element: <HomePage />,
         },
         {
           path: "/products",
