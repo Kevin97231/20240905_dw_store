@@ -14,6 +14,9 @@ api.interceptors.request.use(
 export const useAxios = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [page, setPage] = useState(1);
+
+  const [perPage, setPerPage] = useState(8);
 
   const handleRequest = async (requestFunction, ...args) => {
     setLoading(true);
@@ -36,5 +39,20 @@ export const useAxios = () => {
   const remove = (endpoint, id) =>
     handleRequest(api.delete, `${endpoint}/${id}`);
 
-  return { loading, error, get, post, put, remove };
+  const getPaginate = () =>
+    handleRequest(api.get, `?_page=${page}&_per_page=${perPage}`);
+
+  return {
+    loading,
+    error,
+    get,
+    post,
+    put,
+    remove,
+    getPaginate,
+    page,
+    perPage,
+    setPage,
+    setPerPage,
+  };
 };

@@ -1,9 +1,9 @@
 {
     "products": [
         {
-            "title": "alienwareauroraRdz",
+            "title": "Alienware Aurora r12",
             "price": "150056",
-            "image": "",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3WVAm7Y6cEldH56P10ET3qbSY8MPj749oA&s",
             "description": "L'Alienware Aurora R12 est un ordinateur de bureau de jeu haut de gamme",
             "slug": "alienware-aurora-r12",
             "category": "Ordinateur",
@@ -12,7 +12,7 @@
         {
             "title": "Logitech G Driving Force Racing Wheel",
             "price": "300",
-            "image": "",
+            "image": "https://resource.logitech.com/content/dam/gaming/en/products/drivingforce/g920-gallery-1-2.png",
             "description": "Le Logitech G29 Driving Force Racing Wheel est un volant de course pour les jeux de simulation de conduite.",
             "slug": "logitech-g29-driving-force-racing-wheel",
             "category": "Jeux video",
@@ -103,7 +103,7 @@
             "id": "17",
             "title": "Logitech G Pro Wireless Gaming Mouse",
             "price": 150,
-            "image": "https://imgs.search.brave.com/RvnmhiXD2bvI7K_9lb9mJE1wP8So5hgA8hRE_3pX5Qg/rs:fit:800:600:1/g:ce/aHR0cHM6Ly93d3cu/cGMtYm9vc3QuY29t/L25ld3MvdXBsb2Fk/LzM1X1NlcHRlbWJl/cl8yMDE4L2dfcHJv/X3dpcmVsZXNzMV9n/cmFuZGUuSlBH",
+            "image": "https://resource.logitech.com/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-carbon-gallery-1.png",
             "description": "La Logitech G Pro Wireless Gaming Mouse est une souris de jeu sans fil ergonomique pour une précision rapide.",
             "slug": "logitech-g-pro-wireless",
             "category": "Souris"
@@ -112,7 +112,7 @@
             "id": "18",
             "title": "Razer DeathAdder Elite",
             "price": 70,
-            "image": "https://imgs.search.brave.com/6kHn-RZHqsCBIXcylWwkHbhD4XtUffDpmgHyXuJgKXg/rs:fit:968:648:1/g:ce/aHR0cDovL3d3dy5n/YWRnZXRkZXRhaWwu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE2LzEwL3JhemVy/LWRlYXRoYWRkZXIt/ZWxpdGUuanBn",
+            "image": "data:image/jpeg;base64,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",
             "description": "La Razer DeathAdder Elite est une souris de jeu ergonomique avec une précision rapide et un design confortable.",
             "slug": "razer-deathadder-elite",
             "category": "Souris"

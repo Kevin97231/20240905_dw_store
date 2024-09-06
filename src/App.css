@@ -3,6 +3,7 @@
   align-items: flex-start;
   display: flex;
   flex: 1; /* permet au contenu de remplir tout l'espace dispo. */
+  justify-content: center;
 }
 .navbar {
   position: fixed;
