@@ -17,13 +17,16 @@ export const Cart = () => {
   return (
     <div>
       <Titre>Mon panier</Titre>
-      <ProductList
-        products={cartProducts}
-        title={"supprimer du panier"}
-        onClickFunction={handleDeleteProduct}
-        displayButton="true"
-        buttonType="error"
-      />
+
+      {cartProducts.length > 0 && (
+        <ProductList
+          products={cartProducts}
+          title={"supprimer du panier"}
+          onClickFunction={handleDeleteProduct}
+          displayButton={true}
+          buttonType="error"
+        />
+      )}
     </div>
   );
 };

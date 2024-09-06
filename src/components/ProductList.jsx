@@ -12,10 +12,12 @@ export const ProductList = ({
 }) => {
   const array = Array.from({ length: 8 });
 
+  console.log("produclist", products);
+
   return (
     <>
       <div className="grid w-full grid-cols-4 gap-4">
-        {products
+        {products !== undefined && products.length > 0
           ? products.map((product) => (
               <Fragment key={product.id}>
                 <ProductCard
