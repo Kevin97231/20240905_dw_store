@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
-/* eslint-disable react/prop-types */
 export const ProductCard = ({
   product,
   onClickFunction,
@@ -42,4 +42,12 @@ export const ProductCard = ({
       </div>
     </div>
   );
+};
+
+ProductCard.propTypes = {
+  product: PropTypes.object.isRequired,
+  onClickFunction: PropTypes.func,
+  title: PropTypes.string,
+  displayButton: PropTypes.bool,
+  buttonType: PropTypes.string,
 };
